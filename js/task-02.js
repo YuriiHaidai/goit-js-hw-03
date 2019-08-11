@@ -1,11 +1,7 @@
 "use strict";
 
 function countProps(obj) {
-  let counter = 0;
-  for (const entri in obj) {
-    counter += 1;
-  }
-  return counter;
+  return Object.keys(obj).length;
 }
 
 // Вызовы функции для проверки работоспособности
