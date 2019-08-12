@@ -1,14 +1,11 @@
 "use strict";
 
 function calculateTotalPrice(arr, productName) {
-  let TotalPrice;
-
   for (const product of arr) {
     if (product.name === productName) {
-      TotalPrice = product.price * product.quantity;
+      return product.price * product.quantity;
     }
   }
-  return TotalPrice;
 }
 
 // Вызовы функции для проверки работоспособности
